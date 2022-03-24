@@ -1,3 +1,5 @@
+import './styles/App.scss'
+
 const App = () => (
   <div>
     <p>Hello App Ideas World</p>
