@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import App from './App'
-import './styles/index.sass'
+import './styles/index.scss'
 
 ReactDOM.render(
   <App />,
