@@ -19,6 +19,11 @@
     font-size: 62.5%;
 }
 
+::selection {
+    background-color: $midnight-blue;
+    color: $light-cyan;
+}
+
 
 body {
     color: $midnight-blue;
