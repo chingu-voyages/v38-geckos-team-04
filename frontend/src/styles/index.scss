@@ -1,3 +1,6 @@
+// font for headings and display
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;800&family=Montserrat:wght@300;400&display=swap');
+
 // This is a universal reset to remove default browser styles
 *,
 *::after,
@@ -11,4 +14,19 @@
 // it is easier to calculate relative values like rem, em, percentage etc
 :root {
     font-size: 62.5%;
+}
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.7rem;
+}
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6 {
+    font-family: BioRhyme;
 }
