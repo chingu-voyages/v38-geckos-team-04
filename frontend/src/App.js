@@ -1,4 +1,3 @@
-import './styles/App.scss'
 
 const App = () => (
   <div>
