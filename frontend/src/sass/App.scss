@@ -22,8 +22,11 @@
 }
 
 .main {
+    background-color: $shadow-blue;
     color: $rich-black-fogra-29;
     grid-area: main;
+    grid-column: 3 / 11;
+    height: 50rem;
 }
 
 .footer {
