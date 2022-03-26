@@ -14,7 +14,7 @@ const App = () => (
       <ResultsList />
     </main>
 
-    <footer>
+    <footer className='footer'>
       <p>footer content</p>
     </footer>
   </React.Fragment>
