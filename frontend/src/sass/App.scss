@@ -11,8 +11,14 @@
 }
 
 .header {
-    background-color: $russian-violet-2;
+    background-color: $french-violet;
     grid-area: hero;
+    padding: 5rem 12rem;
+
+    &__heading {
+        color: $platinum;
+        font-size: 5rem;
+    }
 }
 
 .main {
