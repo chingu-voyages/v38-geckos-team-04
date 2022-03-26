@@ -2,6 +2,7 @@
 
 // grid layout for the app
 #root {
+    color: $platinum;
     display: grid;
     grid-template-columns: repeat(12, minmax(min-content, 1fr));
     grid-template-rows: 80vh auto 40vh;
@@ -16,7 +17,6 @@
     padding: 5rem 12rem;
 
     &__heading {
-        color: $platinum;
         font-size: 5rem;
     }
 }
@@ -26,5 +26,6 @@
 }
 
 .footer {
+    background-color: $russian-violet;
     grid-area: footer;
 }
