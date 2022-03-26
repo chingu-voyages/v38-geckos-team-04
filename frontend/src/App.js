@@ -7,17 +7,15 @@ const App = () => (
   <React.Fragment>
     <header>
       <h1>abb - always be building</h1>
-      <p>Hello App Ideas World</p>
-      <nav>
-      </nav>
     </header>
-
+    
     <main>
-      <SearchForm />
+    <SearchForm />
       <ResultsList />
     </main>
 
     <footer>
+      <p>footer content</p>
     </footer>
   </React.Fragment>
 )
