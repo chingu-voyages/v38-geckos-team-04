@@ -1,0 +1,9 @@
+// grid layout for the app
+#root {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(min-content, 1fr));
+    grid-template-rows: 80vh auto 40vh;
+    grid-template-areas: "hero hero hero hero hero hero hero hero hero hero hero hero"
+                         "main main main main main main main main main main main main"
+                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
