@@ -1,0 +1,45 @@
+// import the color variables file
+@import "./abstract/variables.scss";
+
+// font for headings and display
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;800&family=Montserrat:wght@300;400&display=swap');
+
+// This is a universal reset to remove default browser styles
+*,
+*::after,
+*::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+// This is to reset root font-size to 10px instead of 16 so that
+// it is easier to calculate relative values like rem, em, percentage etc
+:root {
+    font-size: 62.5%;
+}
+
+// this style applies when text on the website is selected
+::selection {
+    background-color: $midnight-blue;
+    color: $light-cyan;
+}
+
+// default style for the body of the document
+body {
+    color: $rich-black-fogra-29;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+// default style for the heading tags
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6 {
+    color: $dark-cornflower-blue;
+    font-family: BioRhyme;
+}
