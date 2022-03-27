@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import '../sass/components/footer.scss';
 
 function Footer() {
   return <Fragment>
