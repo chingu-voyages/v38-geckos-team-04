@@ -1,4 +1,5 @@
 import { Fragment }from 'react'
+import '../sass/components/main.scss';
 
 function Main() {
   return <Fragment>
