@@ -1,0 +1,11 @@
+@import "./abstract/variables.scss";
+
+.header {
+    background-color: $french-violet;
+    grid-area: hero;
+    padding: 5rem 12rem;
+
+    &__heading {
+        font-size: 5rem;
+    }
+}
