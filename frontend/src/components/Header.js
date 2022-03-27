@@ -5,7 +5,7 @@ const Header = () => {
     return <Fragment>
         <header className='header'>
             <div className="header__media">
-                <video className="header__video">
+                <video className="header__video" autoPlay muted loop>
 
                 </video>
             </div>
