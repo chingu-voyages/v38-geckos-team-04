@@ -4,7 +4,7 @@ import '../sass/components/header.scss';
 const Header = () => {
     return <Fragment>
         <header className='header'>
-            <div className="header__media">
+            <div className="header__bg-video">
                 <video className="header__video" autoPlay muted loop>
 
                 </video>
