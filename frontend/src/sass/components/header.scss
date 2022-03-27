@@ -4,8 +4,19 @@
     background-color: $french-violet;
     grid-area: hero;
     padding: 5rem 12rem;
+    position: relative;
 
     &__heading {
         font-size: 5rem;
+    }
+
+    &__bg-video {
+        position: absolute;
+    }
+
+    &__video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
     }
 }
