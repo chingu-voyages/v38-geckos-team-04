@@ -1,13 +1,12 @@
 import React from 'react';
+import Header from './components/Header';
 import SearchForm from './SearchForm';
 import ResultsList from './ResultsList';
 import './sass/App.scss'
 
 const App = () => (
   <React.Fragment>
-    <header>
-      <h1>abb - always be building</h1>
-    </header>
+    <Header />
     
     <main>
     <SearchForm />
