@@ -10,10 +10,7 @@ const App = () => (
   <React.Fragment>
     <Header />
     
-    <main>
-      <SearchForm />
-      <ResultsList />
-    </main>
+    <Main />
 
     <Footer />
   </React.Fragment>
