@@ -1,3 +1,5 @@
+import SearchForm from './SearchForm';
+import ResultsList from './ResultsList';
 
 const App = () => (
   <>
@@ -9,6 +11,8 @@ const App = () => (
     </header>
 
     <main>
+      <SearchForm />
+      <ResultsList />
     </main>
 
     <footer>
