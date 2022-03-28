@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import SearchForm from './SearchForm';
 import ResultsList from './ResultsList';
 import './sass/App.scss'
@@ -13,9 +14,7 @@ const App = () => (
       <ResultsList />
     </main>
 
-    <footer className='footer'>
-      <p>footer content</p>
-    </footer>
+    <Footer />
   </React.Fragment>
 )
 
