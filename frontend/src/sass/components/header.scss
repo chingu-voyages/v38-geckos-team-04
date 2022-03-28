@@ -14,10 +14,11 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 10;
-
+        opacity: .15;
+        overflow: hidden;
         height: 100%;
         width: 100%;
+        z-index: -1;
     }
 
     &__video {
