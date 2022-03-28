@@ -1,6 +1,7 @@
+import React from 'react';
 import SearchForm from './SearchForm';
 import ResultsList from './ResultsList';
-import React from 'react';
+import './sass/App.scss'
 
 const App = () => (
   <React.Fragment>
