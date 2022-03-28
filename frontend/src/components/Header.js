@@ -7,7 +7,7 @@ const Header = () => {
         <header className='header'>
             <div className="header__bg-video">
                 <video className="header__video" autoPlay muted loop>
-                    <source  src="../assets/coding-video.mp4" type="video/mp4"/>
+                    <source  src={video} type="video/mp4"/>
                     Please, upgrade your browser to see this video
                 </video>
             </div>
