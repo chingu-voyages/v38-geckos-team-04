@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Main from './components/Main';
 import Footer from './components/Footer';
 import SearchForm from './SearchForm';
 import ResultsList from './ResultsList';
@@ -10,7 +11,7 @@ const App = () => (
     <Header />
     
     <main>
-    <SearchForm />
+      <SearchForm />
       <ResultsList />
     </main>
 
