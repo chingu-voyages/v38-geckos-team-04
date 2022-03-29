@@ -1,23 +1,16 @@
-import SearchForm from './SearchForm';
-import ResultsList from './ResultsList';
 import React from 'react';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+import './sass/App.scss'
 
 const App = () => (
   <React.Fragment>
-    <header>
-      <h1>abb - always be building</h1>
-      <p>Hello App Ideas World</p>
-      <nav>
-      </nav>
-    </header>
+    <Header />
+    
+    <Main />
 
-    <main>
-      <SearchForm />
-      <ResultsList />
-    </main>
-
-    <footer>
-    </footer>
+    <Footer />
   </React.Fragment>
 )
 
