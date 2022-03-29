@@ -1,1 +1,25 @@
 @import "../abstract/variables.scss";
+
+.heading {
+    color: $platinum;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.heading-primary {
+    @extend .heading;
+    font-size: 4.5rem;
+}
+
+.heading-secondary {
+    @extend .heading;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+}
+
+.heading-tertiary {
+    @extend .heading;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
