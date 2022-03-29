@@ -1,0 +1,14 @@
+//MEDIA QUERIES
+
+//1em / 16 equal breakpoint in em
+//450px == 28.125em
+//600px == 37.5em
+//760px == 47.5em
+//900px == 56.25em
+//1034 == 64.625em
+
+@mixin breakpoint($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
