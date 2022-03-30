@@ -9,6 +9,10 @@
 
     &__heading {
         font-size: 5rem;
+
+        @include breakpoint(37.5em) {
+            font-size: 5rem;
+        }
     }
 
     &__bg-video {
