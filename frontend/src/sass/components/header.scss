@@ -7,6 +7,10 @@
     padding: 5rem 12rem;
     position: relative;
 
+    @include breakpoint(37.5em) {
+        padding: 5rem 12rem;
+    }
+
     &__heading {
         font-size: 1.7rem;
 
