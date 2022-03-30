@@ -4,6 +4,7 @@
 .footer {
     background-color: $russian-violet;
     grid-area: footer;
+    padding: 5rem 2rem 0;
     
     @include breakpoint(37.5em) {
         padding: 5rem 12rem 0;
