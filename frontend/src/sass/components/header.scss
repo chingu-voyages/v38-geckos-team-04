@@ -10,7 +10,7 @@
     // styles for devices with a min-width of 600px
      @include breakpoint(37.5em) {
         // this is just a placeholder value
-        padding: 5rem 2rem;
+        padding: 5rem;
     }
 
     // styles for devices with a min-width of 900px
@@ -25,7 +25,7 @@
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
         // this is just a placeholder value
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     // styles for devices with a min-width of 900px
