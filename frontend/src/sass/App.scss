@@ -5,7 +5,7 @@
     color: $platinum;
     display: grid;
     grid-template-columns: repeat(12, minmax(min-content, 1fr));
-    grid-template-rows: 90vh auto 50vh;
+    grid-template-rows: 90vh minmax(min-content, auto) 50vh;
     grid-template-areas: "hero hero hero hero hero hero hero hero hero hero hero hero"
                          "main main main main main main main main main main main main"
                          "footer footer footer footer footer footer footer footer footer footer footer footer";
