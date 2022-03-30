@@ -5,7 +5,7 @@
     background-color: $shadow-blue;
     color: $rich-black-fogra-29;
     grid-area: main;
-    padding: 5rem;
+    padding: 2rem;
 
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
