@@ -4,8 +4,7 @@
 //450px == 28.125em for mobile screen with 450px width
 //600px == 37.5em   for tablets and similar devices
 //760px == 47.5em   for tablets and similar devices
-//900px == 56.25em  for laptops and pcs
-//1034 == 64.625em  for HD screens
+//1024 == 64em  for HD screens
 
 @mixin breakpoint($size) {
     @media only screen and (min-width: $size) {
