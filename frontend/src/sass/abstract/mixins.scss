@@ -1,0 +1,14 @@
+//MEDIA QUERIES
+
+//size in px divided by 16 equal breakpoint in em
+//450px == 28.125em for mobile screen with 450px width
+//600px == 37.5em   for tablets and similar devices
+//760px == 47.5em   for tablets and similar devices
+//900px == 56.25em for smaller laptops and similar devices
+//1024 == 64em  for laptop screens
+
+@mixin breakpoint($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
