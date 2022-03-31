@@ -1,0 +1,11 @@
+{
+  "name": "app-finder",
+  "version": "1.0.0",
+  "description": "An app that provides project ideas to build and grow your skills",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacek, Lauren, Moody",
+  "license": "MIT"
+}
