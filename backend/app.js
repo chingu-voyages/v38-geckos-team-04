@@ -20,7 +20,7 @@ app.get("/", (req, res, next) => {
     // convert object to json
     const dummyJSON = JSON.stringify(appIdea);
  
-    // set the response status and send the json data
+    // set the headers, response status and send the json data
     res.setHeader("Content-Type", "application/json").status(200).send(dummyJSON);
 })
 
