@@ -6,4 +6,6 @@ const app = express();
 app.use(express.json());
 
 // create server
-app.listen(5000);
+app.listen(5000, () => {
+    console.log('Visit localhost:5000/ on a browser');
+});
