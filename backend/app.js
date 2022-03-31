@@ -8,6 +8,6 @@ const PORT = process.env.PORT;
 app.use(express.json())
 
 // create server
-app.listen(() => {
-    console.log(`Now running on port ${PORT}`);
-}, PORT);
+app.listen(PORT, () => {
+    console.log(`Now running server on port ${PORT}`);
+});
