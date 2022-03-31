@@ -7,15 +7,17 @@ app.use(express.json());
 
 // demo response from the server
 app.get("/", (req, res, next) => {
-    // create javascript object
-    const dummyContent = {
-        name: "App Finder",
-        stack: "MERN",
-        team: "Jacek, Lauren, Moody",
+    // create dummy javascript object
+    const appIdea = {
+        id: Math.random(),
+        name: "blog",
+        category: "full stack",
+        difficulty: "intermediate",
+        summary: "a blog web app",
     };
 
     // convert object to json
-    const dummyJSON = JSON.stringify(dummyContent);
+    const dummyJSON = JSON.stringify(appIdea);
  
     // set the response status and send the json data
     res.status(200).send(dummyJSON);
