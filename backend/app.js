@@ -25,5 +25,5 @@ app.get("/", (req, res, next) => {
 
 // create server
 app.listen(5000, () => {
-    console.log('Visit localhost:5000/ on a browser');
+    console.log('Visit http://localhost:5000/ on a browser');
 });
