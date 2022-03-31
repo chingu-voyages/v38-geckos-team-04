@@ -30,7 +30,7 @@ const SearchForm = () => (
                 <div class="radio-choice-container">
                     <input type="radio" id="advanced" name="select" value="advanced" />
                     <label for="advanced">
-                    <h2 className="heading-secondary heading-radio">Difficult</h2>
+                    <h2 className="heading-secondary heading-radio">Advanced</h2>
                         <p>Developers who have all of the above, and are learning more advanced techniques like implementing backend applications and database services.</p>
                     </label>
                 </div>   
