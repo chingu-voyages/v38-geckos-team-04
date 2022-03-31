@@ -21,7 +21,7 @@ app.get("/", (req, res, next) => {
     const dummyJSON = JSON.stringify(appIdea);
  
     // set the response status and send the json data
-    res.status(200).send(dummyJSON);
+    res.setHeader("Content-Type", "application/json").status(200).send(dummyJSON);
 })
 
 // create server
