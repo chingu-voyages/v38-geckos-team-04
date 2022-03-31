@@ -1,5 +1,6 @@
 const express = require('express');
 
+// expose the express api into the app const
 const app = express();
 
 // parse application/json content-type
