@@ -11,5 +11,18 @@
  * and response for the target route.
  */
 module.exports.appController = (req, res, next) => {
+    // create dummy javascript object
+    const appIdea = {
+        id: Math.random(),
+        name: "blog",
+        category: "full stack",
+        difficulty: "intermediate",
+        summary: "a blog web app",
+    };
 
+    // convert object to json
+    const dummyJSON = JSON.stringify(appIdea);
+
+    // set the headers, response status and send the json data
+    res.setHeader("Content-Type", "application/json").status(200).send(dummyJSON);
 }
