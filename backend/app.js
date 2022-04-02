@@ -13,8 +13,6 @@ app.use(express.json());
 // use the mainRoute
 app.use("/", main);
 
-app.get("/")
-
 // create server
 app.listen(5000, () => {
     console.log('Visit http://localhost:5000/ on a browser');
