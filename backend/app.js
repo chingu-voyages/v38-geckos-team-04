@@ -10,6 +10,8 @@ const app = express();
 // parse application/json content-type
 app.use(express.json());
 
+// use the mainRoute
+app.use("/", main);
 
 app.get("/")
 
