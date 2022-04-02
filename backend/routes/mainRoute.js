@@ -5,6 +5,6 @@ const appController = require('../controller/appController');
 
 const router = express.Router();
 
-router.get('/')
+router.get('/', appController);
 
 module.exports = router;
