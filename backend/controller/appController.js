@@ -27,4 +27,5 @@ const appController = (req, res, next) => {
     res.setHeader("Content-Type", "application/json").status(200).send(dummyJSON);
 }
 
+// export appController
 module.exports = appController;
