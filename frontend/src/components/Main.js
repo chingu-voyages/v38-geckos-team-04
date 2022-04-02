@@ -8,7 +8,6 @@ function Main() {
             <main className='main'>
                 <SearchForm />
                 <ResultsList />
-                <p>Hello App Ideas World</p>
             </main>
         </Fragment>
 }

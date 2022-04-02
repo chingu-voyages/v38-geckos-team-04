@@ -1,0 +1,19 @@
+@import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
+
+.result {
+
+    border: 1px solid pink;
+    
+    &__name {
+        background-color: green;
+    }
+
+    &__description {
+        background-color: gray;
+    }
+
+    &__link {
+        background-color: purple;
+    }
+}

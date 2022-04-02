@@ -1,0 +1,12 @@
+@import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
+
+.result-container {
+  text-align: center;
+  
+  @include breakpoint(47.5em) {
+    display: flex;
+    text-align: left;
+ }
+}
+
