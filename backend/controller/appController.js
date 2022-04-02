@@ -10,7 +10,7 @@
  * This function will receive the request and response objects and handle the request
  * and response for the target route.
  */
-module.exports.appController = (req, res, next) => {
+const appController = (req, res, next) => {
     // create dummy javascript object
     const appIdea = {
         id: Math.random(),
@@ -26,3 +26,5 @@ module.exports.appController = (req, res, next) => {
     // set the headers, response status and send the json data
     res.setHeader("Content-Type", "application/json").status(200).send(dummyJSON);
 }
+
+module.exports = appController;
