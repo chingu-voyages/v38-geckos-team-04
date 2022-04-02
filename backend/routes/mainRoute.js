@@ -12,4 +12,5 @@ const router = express.Router();
 // set up get route for visit to localhost:5000/
 router.get('/', appController);
 
+// export router
 module.exports = router;
