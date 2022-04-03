@@ -6,6 +6,8 @@ const main = require('./routes/mainRoute');
 
 // expose the express api into the app const
 const app = express();
+
+// read the PORT environment variable into port
 const port = process.env.PORT;
 
 // parse application/json content-type
