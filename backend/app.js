@@ -6,7 +6,6 @@ const main = require('./routes/mainRoute');
 // expose the express api into the app const
 const app = express();
 
-
 // parse application/json content-type
 app.use(express.json());
 
