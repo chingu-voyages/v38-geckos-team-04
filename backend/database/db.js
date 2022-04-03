@@ -1,0 +1,7 @@
+/* 
+This is where the database connection lives
+The connection to mongoDB will be made here and then exported
+so that it can be used in other files where connection to the 
+database is required.
+
+*/
