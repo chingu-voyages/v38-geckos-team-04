@@ -8,7 +8,7 @@ to the Views.
 
 /**
  * 
- * @param { Object } req This is the request object 
+ * @param { Object } req This is the request object
  * @param { Object } res This is the response object
  * @param { Function } next This function is used to call the next middleware
  * 
@@ -16,6 +16,7 @@ to the Views.
  * This function will receive the request and response objects and handle the request
  * and response for the target route.
  */
+
 const appController = (req, res, next) => {
     // create dummy javascript object
     const appIdea = {
