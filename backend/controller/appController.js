@@ -8,9 +8,9 @@ to the Views.
 
 /**
  * 
- * @param { Object } req This is the request object
- * @param { Object } res This is the response object
- * @param { Function } next This function is used to call the next middleware
+ * @param {object} req This is the request object
+ * @param {object} res This is the response object
+ * @param {function} next This function is used to call the next middleware
  * 
  * @description
  * This function will receive the request and response objects and handle the request
