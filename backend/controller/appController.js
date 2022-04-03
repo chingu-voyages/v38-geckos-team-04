@@ -1,4 +1,10 @@
-// This is a demo controller
+/* 
+This is a controller file. In the MVC framework, the Model (business logic, data)
+is separated from the Views (the user facing logic). However, sometimes the Views needs
+to communicate with the Model to get data to display. In that situation, it is the 
+Controller that bridges the gap. The Controller talks to the Model and sends that response
+to the Views.
+*/
 
 /**
  * 
