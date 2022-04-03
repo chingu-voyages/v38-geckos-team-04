@@ -6,7 +6,7 @@ const main = require('./routes/mainRoute');
 
 // expose the express api into the app const
 const app = express();
-const local = process.env.PORT;
+const port = process.env.PORT;
 
 // parse application/json content-type
 app.use(express.json());
@@ -15,6 +15,6 @@ app.use(express.json());
 app.use("/", main);
 
 // create server
-app.listen(local, () => {
-    console.log(`Visit http://localhost:${local}/ on a browser`);
+app.listen(port, () => {
+    console.log(`Visit http://localhost:${port}/ on a browser`);
 });
