@@ -6,6 +6,8 @@ Controller that bridges the gap. The Controller talks to the Model and sends tha
 to the Views.
 */
 
+const client = require('../database/db');
+
 /**
  * @description
  * This function will receive the request and response objects and handle the request
