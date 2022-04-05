@@ -6,7 +6,7 @@ Controller that bridges the gap. The Controller talks to the Model and sends tha
 to the Views.
 */
 
-const client = require('../database/db');
+const projectCollection = require('../database/db');
 
 /**
  * @description
@@ -29,6 +29,12 @@ const appController = (req, res, next) => {
         difficulty: "intermediate",
         summary: "a blog web app",
     };
+
+    projectCollection.insertOne(appIdea).then(result => {
+        console.log(result);
+    }).catch(error => {
+        console.log(error)
+    })
 
     // convert object to json
     const dummyJSON = JSON.stringify(appIdea);
