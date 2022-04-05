@@ -21,5 +21,9 @@ app.use("/", main);
 // create server
 app.listen(port, () => {
     console.log(`Visit http://localhost:${port}/ on a browser`);
-    mongoose.connect()
+    mongoose.connect(uri).then(result => {
+        console.log('Connected');
+    }).catch(error => {
+        console.log('Not connected');
+    })
 });
