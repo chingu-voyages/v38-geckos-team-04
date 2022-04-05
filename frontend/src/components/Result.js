@@ -2,18 +2,20 @@ import { Fragment } from "react";
 import '../sass/components/result.scss';
 import '../sass/base/typography.scss';
 
-const Result = () => (
+const Result = ({name, description, link}) => (
     <Fragment>
             <div class="result">
-                <div class="result__name">
-                    Wind Chill
+                <div className="result__name">
+                <h3 className="heading-result">{name}</h3> 
                 </div>
                 <div class="result__description">
-                    Desc
+                     <span className="paragraph">
+                         {description}
+                     </span>
                 </div>
-                <div class="result__link">
-                    idea
-                </div>
+                <a href={link} className="result__link link-result">
+                    MORE
+                </a>
             </div>
     </Fragment>
 )

@@ -5,8 +5,8 @@ import Result from './Result';
 
 const ResultsList = () => (
     <Fragment>
-        <div className="results">
-            <Result />
+        <div className="results-container">
+            <Result name="Lorem dolor" description="Lorem dolor sit amet lorem dolor lorem dolor sit amet" link="http://www.google.com"/>
         </div>
     </Fragment>
 )

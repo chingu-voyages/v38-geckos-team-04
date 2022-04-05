@@ -1,12 +1,8 @@
 @import "../abstract/variables.scss";
 @import "../abstract/mixins.scss";
 
-.result-container {
-  text-align: center;
-  
-  @include breakpoint(47.5em) {
-    display: flex;
-    text-align: left;
- }
+.results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 

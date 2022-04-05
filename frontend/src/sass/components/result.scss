@@ -2,18 +2,34 @@
 @import "../abstract/mixins.scss";
 
 .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $persian-indigo;
+    border-radius: 10px;
+    height: 15em;
+    margin: 0.5rem;
 
-    border: 1px solid pink;
-    
     &__name {
-        background-color: green;
+        width: 100%;
+        height: 2em;
+        background-color: $persian-indigo;
+        border-color: $persian-indigo;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 
     &__description {
-        background-color: gray;
+        padding: 1em;
     }
 
     &__link {
-        background-color: purple;
+        height: 5rem;
+        width: 10rem;
+        background-color: $persian-indigo;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
     }
 }
