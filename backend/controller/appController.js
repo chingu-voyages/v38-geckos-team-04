@@ -6,7 +6,7 @@ Controller that bridges the gap. The Controller talks to the Model and sends tha
 to the Views.
 */
 
-const projectCollection = require('../database/db');
+const { client, projectCollection } = require('../database/db');
 
 /**
  * @description
