@@ -6,6 +6,7 @@ database is required.
 
 */
 
+require("dotenv").config();
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = 
