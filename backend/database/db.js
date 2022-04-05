@@ -11,6 +11,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 const uri = process.env.DB_URI;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-const db = client.db('app').collection('projects');
+const db = client.db('app')
+const project = db.collection('projects');
 
-module.exports = db;
+module.exports = project;
