@@ -4,7 +4,7 @@ const { ServerApiVersion } = require('mongodb');
 const mongoose = require('mongoose');
 
 // import main route
-const main = require('./routes/mainRoute');
+const API = require('./routes/api');
 
 // expose the express api into the app const
 const app = express();
@@ -17,7 +17,7 @@ const uri = process.env.DB_URI;
 app.use(express.json());
 
 // use the mainRoute
-app.use("/api", main);
+app.use("/api", API);
 
 const options = {
     useNewUrlParser: true, 
