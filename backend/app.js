@@ -22,7 +22,7 @@ app.use("/", main);
 const options = {
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
-    // serverApi: ServerApiVersion.v1
+    serverApi: ServerApiVersion.v1
 }
 
 
