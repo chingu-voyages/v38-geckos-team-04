@@ -4,7 +4,7 @@
   "description": "An app that provides project ideas to build and grow your skills",
   "main": "app.js",
   "scripts": {
-    "client": "cd ../frontend/ && npm start",
+    "frontend": "cd ../frontend/ && npm start",
     "server": "nodemon app.js",
     "start": "nodemon app.js"
   },
