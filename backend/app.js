@@ -17,7 +17,7 @@ const uri = process.env.DB_URI;
 app.use(express.json());
 
 // use the mainRoute
-app.use("/", main);
+app.use("/api", main);
 
 const options = {
     useNewUrlParser: true, 
