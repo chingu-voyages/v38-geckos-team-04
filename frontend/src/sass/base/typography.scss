@@ -25,3 +25,30 @@
     font-size: 1.8rem;
     text-transform: capitalize;
 }
+
+.heading-result {
+    @extend .heading;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 2;
+    color: white;
+}
+
+.paragraph {
+    color: $rich-black-fogra-29;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.link {
+    text-decoration: none;
+    font-family: "BioRhyme", serif;
+    color: white;
+}
+
+.link-result {
+    @extend .link;
+    font-size: 1.7rem;
+    line-height: 2.8;
+}

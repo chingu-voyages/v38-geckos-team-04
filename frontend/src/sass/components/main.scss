@@ -15,7 +15,6 @@
     // styles for devices with a min-width of 900px
     @include breakpoint(56.25em) {
         grid-column: 2 / 12;
-        height: 50rem;
         padding: 3rem 5rem 5rem 5rem;
     }
 }

@@ -6,9 +6,10 @@ import '../sass/components/main.scss';
 function Main() {
   return <Fragment>
             <main className='main'>
+            <h1 className='heading-primary'>abb - always be building</h1>
+
                 <SearchForm />
                 <ResultsList />
-                <p>Hello App Ideas World</p>
             </main>
         </Fragment>
 }
