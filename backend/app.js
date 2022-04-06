@@ -25,13 +25,14 @@ const options = {
     serverApi: ServerApiVersion.v1
 }
 
+// create database connection
+mongoose.connect(uri, options).then(result => {
+    console.log(result.Collection);
+}).catch(error => {
+    console.log(error);
+})
 
 // create server
 app.listen(port, () => {
     console.log(`Visit http://localhost:${port}/ on a browser`);
-    mongoose.connect(uri, options).then(result => {
-        console.log(result);
-    }).catch(error => {
-        console.log(error);
-    })
 });
