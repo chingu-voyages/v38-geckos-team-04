@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const { ServerApiVersion } = require('mongodb');
 const mongoose = require('mongoose');
 
 // import main route
@@ -20,7 +21,8 @@ app.use("/api", API);
 
 const options = {
     useNewUrlParser: true, 
-    useUnifiedTopology: true
+    useUnifiedTopology: true, 
+    serverApi: ServerApiVersion.v1
 }
 
 // create database connection
