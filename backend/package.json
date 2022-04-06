@@ -6,7 +6,7 @@
   "scripts": {
     "frontend": "cd ../frontend/ && npm start",
     "backend": "nodemon app.js",
-    "start": "nodemon app.js"
+    "start": "concurrently \"frontend\" \"backend\""
   },
   "author": "Jacek, Lauren, Moody",
   "license": "MIT",
