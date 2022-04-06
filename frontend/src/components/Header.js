@@ -12,7 +12,6 @@ const Header = () => {
                     Please, upgrade your browser to see this video
                 </video>
             </div>
-            <h1 className='heading-primary'>abb - always be building</h1>
         </header>
     </Fragment>
 }
