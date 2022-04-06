@@ -29,7 +29,7 @@ const options = {
 mongoose.connect(uri, options).then(result => {
     console.log(result.Collection);
 }).catch(error => {
-    console.log(error);
+    console.log(error.message);
 })
 
 // create server
