@@ -34,5 +34,5 @@ mongoose.connect(uri, options).then(result => {
 
 // create server
 app.listen(port, () => {
-    console.log(`Visit http://localhost:${port}/ on a browser`);
+    console.log(`Visit http://localhost:${port}/api on a browser`);
 });
