@@ -4,6 +4,7 @@
   "description": "An app that provides project ideas to build and grow your skills",
   "main": "app.js",
   "scripts": {
+    "server": "nodemon app.js",
     "start": "nodemon app.js"
   },
   "author": "Jacek, Lauren, Moody",
