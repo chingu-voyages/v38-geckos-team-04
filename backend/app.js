@@ -27,9 +27,9 @@ const options = {
 
 // create database connection
 mongoose.connect(uri, options).then(result => {
-    console.log(result.Collection);
+    console.log('Connected successfully to the Database');
 }).catch(error => {
-    console.log(error.message);
+    console.log('Connection failed! Please ensure you have a network connection.');
 })
 
 // create server
