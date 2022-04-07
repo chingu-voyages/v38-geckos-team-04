@@ -10,7 +10,7 @@ const API = require('./routes/api');
 const app = express();
 
 // read the PORT environment variable into port
-const port = process.env.PORT;
+const PORT = process.env.PORT;
 const MONGODB_URI = process.env.DB_URI;
 
 // parse application/json content-type
@@ -33,6 +33,6 @@ mongoose.connect(MONGODB_URI, options).then(result => {
 })
 
 // create server
-app.listen(port, () => {
-    console.log(`Visit http://localhost:${port}/api on a browser`);
+app.listen(PORT, () => {
+    console.log(`Visit http://localhost:${PORT}/api on a browser`);
 });
