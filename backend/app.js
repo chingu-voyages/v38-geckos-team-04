@@ -11,7 +11,7 @@ const app = express();
 
 // read the PORT environment variable into port
 const port = process.env.PORT;
-const uri = process.env.DB_URI;
+const MONGODB_URI = process.env.DB_URI;
 
 // parse application/json content-type
 app.use(express.json());
@@ -26,7 +26,7 @@ const options = {
 }
 
 // create database connection
-mongoose.connect(uri, options).then(result => {
+mongoose.connect(MONGODB_URI, options).then(result => {
     console.log('Connected successfully to the Database');
 }).catch(error => {
     console.log('Connection failed! Please ensure you have a network connection.');
