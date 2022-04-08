@@ -1,9 +1,11 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import '../sass/components/searchform.scss';
 import '../sass/base/typography.scss';
 import icon from '../assets/search-icon.png';
 
-const SearchForm = () => (
+const SearchForm = () => {
+    const [difficulty, setDifficulty] = useState('beginner');
+    return(
     <Fragment>
          <div class="search-form">
             <div class="text-input-container">
@@ -14,21 +16,39 @@ const SearchForm = () => (
 
             <div class="radio-bar-container">
                 <div class="radio-choice-container">
-                    <input type="radio" id="beginner" name="select" value="beginner" />
+                    <input 
+                        type="radio" 
+                        id="beginner" 
+                        name="select" 
+                        value="beginner" 
+                        checked={difficulty === 'beginner'} 
+                        onClick={() => setDifficulty('beginner')}/>
                     <label for="beginner">
                         <h2 className="heading-secondary heading-radio">Beginner</h2>
                         <p>Developers in the early stages of their learning journey. Those who are typically focused on creating user-facing applications.</p>
                     </label>
                 </div>
                 <div class="radio-choice-container">
-                    <input type="radio" id="intermediate" name="select" value="intermediate" />
+                    <input 
+                        type="radio" 
+                        id="intermediate" 
+                        name="select" 
+                        value="intermediate" 
+                        checked={difficulty === 'intermediate'} 
+                        onClick={() => setDifficulty('intermediate')}/>
                     <label for="intermediate">
                     <h2 className="heading-secondary heading-radio">Intermediate</h2>
                         <p>Developers at an intermediate stage of learning and experience. They are comfortable in UI/UX, using development tools, and building apps that use API services.</p>
                     </label>
                 </div>
                 <div class="radio-choice-container">
-                    <input type="radio" id="advanced" name="select" value="advanced" />
+                    <input 
+                        type="radio" 
+                        id="advanced" 
+                        name="select" 
+                        value="advanced" 
+                        checked={difficulty === 'advanced'} 
+                        onClick={() => setDifficulty('advanced')}/>
                     <label for="advanced">
                     <h2 className="heading-secondary heading-radio">Advanced</h2>
                         <p>Developers who have all of the above, and are learning more advanced techniques like implementing backend applications and database services.</p>
@@ -38,5 +58,6 @@ const SearchForm = () => (
          </div>
     </Fragment>
 )
+}
 
 export default SearchForm;
