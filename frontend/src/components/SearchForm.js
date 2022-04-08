@@ -1,11 +1,9 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import '../sass/components/searchform.scss';
 import '../sass/base/typography.scss';
 import icon from '../assets/search-icon.png';
 
-const SearchForm = () => {
-    const [difficulty, setDifficulty] = useState('beginner');
-    return(
+const SearchForm = ({difficulty, setDifficulty}) => (
     <Fragment>
          <div class="search-form">
             <div class="text-input-container">
@@ -22,7 +20,8 @@ const SearchForm = () => {
                         name="select" 
                         value="beginner" 
                         checked={difficulty === 'beginner'} 
-                        onClick={() => setDifficulty('beginner')}/>
+                        onClick={() => setDifficulty('beginner')}
+                    />
                     <label for="beginner">
                         <h2 className="heading-secondary heading-radio">Beginner</h2>
                         <p>Developers in the early stages of their learning journey. Those who are typically focused on creating user-facing applications.</p>
@@ -35,7 +34,8 @@ const SearchForm = () => {
                         name="select" 
                         value="intermediate" 
                         checked={difficulty === 'intermediate'} 
-                        onClick={() => setDifficulty('intermediate')}/>
+                        onClick={() => setDifficulty('intermediate')}
+                    />
                     <label for="intermediate">
                     <h2 className="heading-secondary heading-radio">Intermediate</h2>
                         <p>Developers at an intermediate stage of learning and experience. They are comfortable in UI/UX, using development tools, and building apps that use API services.</p>
@@ -48,7 +48,8 @@ const SearchForm = () => {
                         name="select" 
                         value="advanced" 
                         checked={difficulty === 'advanced'} 
-                        onClick={() => setDifficulty('advanced')}/>
+                        onClick={() => setDifficulty('advanced')}
+                    />
                     <label for="advanced">
                     <h2 className="heading-secondary heading-radio">Advanced</h2>
                         <p>Developers who have all of the above, and are learning more advanced techniques like implementing backend applications and database services.</p>
@@ -58,6 +59,5 @@ const SearchForm = () => {
          </div>
     </Fragment>
 )
-}
 
 export default SearchForm;

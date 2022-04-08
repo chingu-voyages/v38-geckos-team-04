@@ -3,7 +3,7 @@ import '../sass/components/resultslist.scss';
 import '../sass/base/typography.scss';
 import Result from './Result';
 
-const sampleJSON = {
+const appIdeas= {
         app1: {
             name: "Bin2Dec",
             description: "Binary-to-Decimal number converter",
@@ -42,15 +42,19 @@ const sampleJSON = {
         },
 }
 
-const ResultsList = () => (
+const ResultsList = ({difficulty}) => (
     <Fragment>
         <div className="results-container">
-            {Object.keys(sampleJSON).map(app => 
-                <Result 
-                    name={sampleJSON[app].name} 
-                    description={sampleJSON[app].description} 
-                    link={sampleJSON[app].link} 
-                />
+            {Object.keys(appIdeas).map(function (app) { 
+
+                if (appIdeas[app].difficulty === difficulty)
+                    return (  
+                        <Result 
+                            name={appIdeas[app].name} 
+                            description={appIdeas[app].description} 
+                            link={appIdeas[app].link} 
+                        />)
+            }
             )}   
         </div>
     </Fragment>
