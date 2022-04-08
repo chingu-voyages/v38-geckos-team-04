@@ -19,6 +19,7 @@ app.use(express.json());
 // use the mainRoute
 app.use("/api", API);
 
+// mongoose connection options
 const options = {
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
