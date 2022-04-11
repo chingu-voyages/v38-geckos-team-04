@@ -6,12 +6,8 @@ import icon from '../assets/search-icon.png';
 const SearchForm = () => {
     const [radioDifficulty, setRadioDifficulty] = useState('beginner');
 
-    const onSetRadioDifficulty = (value) => {
-        setRadioDifficulty(value);
-    }
-
     const difficultyHandler = (value) => {
-        onSetRadioDifficulty(value);
+        setRadioDifficulty(value);
     }
 
     return (
