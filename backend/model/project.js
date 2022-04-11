@@ -35,7 +35,7 @@ const projectSchema = new Schema({
     },
     examples: {
         type: Array,
-        of: Mixed
+        of: Schema.Types.Mixed
     },
     challenge: String
 });
