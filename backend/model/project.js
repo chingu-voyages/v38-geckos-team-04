@@ -29,7 +29,7 @@ const projectSchema = new Schema({
         of: String,
         required: true
     },
-    "links_to_resource": {
+    "links_to_resources": {
         type: Array,
         of: String
     },
