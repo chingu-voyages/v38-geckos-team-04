@@ -14,6 +14,10 @@ const projectSchema = new Schema({
         lowercase: true,
         required: true,
         trim: true
+    },
+    summary: {
+        type: String,
+        required: true
     }
 
 });
