@@ -19,8 +19,12 @@ const projectSchema = new Schema({
         type: String,
         required: true
     },
-    category: [String],
+    category: {
+        type: Array,
+        of: String,
+        required: true
+    },
     epics: [String],
     "links_to_resource": [String],
-    
+    examples: []
 });
