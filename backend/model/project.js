@@ -39,3 +39,5 @@ const projectSchema = new Schema({
     },
     challenge: String
 });
+
+const Project = model("Project", projectSchema);
