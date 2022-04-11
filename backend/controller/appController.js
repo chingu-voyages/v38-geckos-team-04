@@ -8,7 +8,7 @@ to the Views.
 
 const fs = require('fs');
 const path = require('path');
-const project = require('../model/project');
+const Project = require('../model/project');
 
 /**
  * @description
@@ -28,7 +28,14 @@ const appController = (req, res, next) => {
     fs.readFile(JSONFile, "utf8", (err, content) => {
         if (err) {
             console.log(err);
-            returrn;
+            return;
+        }
+        const parseContent = JSON.parse(content);
+        for (const p of parseContent) {
+           let newProject = new Project(p);
+           newProject.save().then(doc => {
+               console.log(doc);
+           });
         }
         res.setHeader("Content-Type", "application/json").status(200).send(content);
     });
