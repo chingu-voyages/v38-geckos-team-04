@@ -23,16 +23,22 @@ const Project = require('../model/project');
  * @returns {void}
  */
 const appController = (req, res, next) => {
+    // save path to schema.json file into JSONFile
     const JSONFile = path.join(__dirname, "..", "..", "schema.json");
    
+    // read content of schema.json
     fs.readFile(JSONFile, "utf8", (err, content) => {
         if (err) {
             console.log(err);
             return;
         }
+        // parse json content to JavaScript array
         const parseContent = JSON.parse(content);
+        // loop over the array
         for (const p of parseContent) {
+            //create a model for each element of the array
            let newProject = new Project(p);
+           // save the created document to the database
            newProject.save().then(doc => {
                console.log(doc);
            });
