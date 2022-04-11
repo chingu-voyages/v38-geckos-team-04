@@ -6,6 +6,14 @@ import icon from '../assets/search-icon.png';
 const SearchForm = () => {
     const [radioDifficulty, setRadioDifficulty] = useState('beginner');
 
+    const onSetRadioDifficulty = (value) => {
+        setRadioDifficulty(value);
+    }
+
+    const difficultyHandler = (value) => {
+        onSetRadioDifficulty(value);
+    }
+
     return (
     <Fragment>
          <div className="search-form">
@@ -23,7 +31,8 @@ const SearchForm = () => {
                         name="select" 
                         value="beginner" 
                         checked={radioDifficulty === 'beginner'} 
-                        onClick={() => setRadioDifficulty('beginner')}
+                        onClick={() => difficultyHandler('beginner')}
+                        readOnly
                     />
                     <label htmlFor="beginner">
                         <h2 className="heading-secondary heading-radio">Beginner</h2>
@@ -37,7 +46,8 @@ const SearchForm = () => {
                         name="select" 
                         value="intermediate" 
                         checked={radioDifficulty === 'intermediate'} 
-                        onClick={() => setRadioDifficulty('intermediate')}
+                        onClick={() => difficultyHandler('intermediate')}
+                        readOnly
                     />
                     <label htmlFor="intermediate">
                     <h2 className="heading-secondary heading-radio">Intermediate</h2>
@@ -51,7 +61,8 @@ const SearchForm = () => {
                         name="select" 
                         value="advanced" 
                         checked={radioDifficulty === 'advanced'} 
-                        onClick={() => setRadioDifficulty('advanced')}
+                        onClick={() => difficultyHandler('advanced')}
+                        readOnly
                     />
                     <label htmlFor="advanced">
                     <h2 className="heading-secondary heading-radio">Advanced</h2>
