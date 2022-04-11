@@ -6,6 +6,7 @@ Controller that bridges the gap. The Controller talks to the Model and sends tha
 to the Views.
 */
 
+const fs = require('fs');
 const project = require('./model/project');
 
 /**
