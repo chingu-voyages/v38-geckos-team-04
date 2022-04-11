@@ -5,6 +5,9 @@ import '../sass/components/main.scss';
 
 function Main() {
     const [radioDifficulty, setRadioDifficulty] = useState('beginner');
+    
+    
+
     return (
         <Fragment>
             <main className='main'>

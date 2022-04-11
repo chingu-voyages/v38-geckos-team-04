@@ -4,11 +4,11 @@ import '../sass/base/typography.scss';
 
 const Result = ({name, description, link}) => (
     <Fragment>
-            <div class="result">
+            <div className="result">
                 <div className="result__name">
                 <h3 className="heading-result">{name}</h3> 
                 </div>
-                <div class="result__description">
+                <div className="result__description">
                      <span className="paragraph">
                          {description}
                      </span>

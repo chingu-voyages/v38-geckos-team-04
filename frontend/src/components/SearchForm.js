@@ -5,15 +5,15 @@ import icon from '../assets/search-icon.png';
 
 const SearchForm = ({radioDifficulty, setRadioDifficulty}) => (
     <Fragment>
-         <div class="search-form">
-            <div class="text-input-container">
+         <div className="search-form">
+            <div className="text-input-container">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Search for an app idea or simply choose the difficulty level below..."/> 
-                <img className="search-icon" src={icon} alt="search"/>
+                <img classNameName="search-icon" src={icon} alt="search"/>
             </div>
 
-            <div class="radio-bar-container">
-                <div class="radio-choice-container">
+            <div className="radio-bar-container">
+                <div className="radio-choice-container">
                     <input 
                         type="radio" 
                         id="beginner" 
@@ -23,11 +23,11 @@ const SearchForm = ({radioDifficulty, setRadioDifficulty}) => (
                         onClick={() => setRadioDifficulty('beginner')}
                     />
                     <label for="beginner">
-                        <h2 className="heading-secondary heading-radio">Beginner</h2>
+                        <h2 classNameName="heading-secondary heading-radio">Beginner</h2>
                         <p>Developers in the early stages of their learning journey. Those who are typically focused on creating user-facing applications.</p>
                     </label>
                 </div>
-                <div class="radio-choice-container">
+                <div className="radio-choice-container">
                     <input 
                         type="radio" 
                         id="intermediate" 
@@ -41,7 +41,7 @@ const SearchForm = ({radioDifficulty, setRadioDifficulty}) => (
                         <p>Developers at an intermediate stage of learning and experience. They are comfortable in UI/UX, using development tools, and building apps that use API services.</p>
                     </label>
                 </div>
-                <div class="radio-choice-container">
+                <div className="radio-choice-container">
                     <input 
                         type="radio" 
                         id="advanced" 
