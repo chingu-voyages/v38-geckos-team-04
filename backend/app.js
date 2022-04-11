@@ -7,6 +7,7 @@ const path = require('path');
 
 // import main route
 const API = require('./routes/api');
+const project = require('./model/project');
 
 // expose the express api into the app const
 const app = express();
