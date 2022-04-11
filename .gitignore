@@ -1,6 +1,9 @@
 #json
 schema.json
 
+# personal file
+populateDatabaseController.js
+
 # Logs
 logs
 *.log
