@@ -29,6 +29,9 @@ const projectSchema = new Schema({
         of: String,
         required: true
     },
-    "links_to_resource": [String],
+    "links_to_resource": {
+        type: Array,
+        of: String
+    },
     examples: []
 });
