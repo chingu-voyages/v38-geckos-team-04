@@ -42,7 +42,7 @@ const appIdeas= [
         },
     ]
 
-const ResultsList = ({difficulty}) => (
+const ResultsList = () => (
     <Fragment>
         <div className="results-container">
             {appIdeas.map(app => 

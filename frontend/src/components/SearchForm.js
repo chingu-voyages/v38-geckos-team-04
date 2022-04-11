@@ -3,7 +3,7 @@ import '../sass/components/searchform.scss';
 import '../sass/base/typography.scss';
 import icon from '../assets/search-icon.png';
 
-const SearchForm = ({difficulty, setDifficulty}) => (
+const SearchForm = ({radioDifficulty, setRadioDifficulty}) => (
     <Fragment>
          <div class="search-form">
             <div class="text-input-container">
@@ -19,8 +19,8 @@ const SearchForm = ({difficulty, setDifficulty}) => (
                         id="beginner" 
                         name="select" 
                         value="beginner" 
-                        checked={difficulty === 'beginner'} 
-                        onClick={() => setDifficulty('beginner')}
+                        checked={radioDifficulty === 'beginner'} 
+                        onClick={() => setRadioDifficulty('beginner')}
                     />
                     <label for="beginner">
                         <h2 className="heading-secondary heading-radio">Beginner</h2>
@@ -33,8 +33,8 @@ const SearchForm = ({difficulty, setDifficulty}) => (
                         id="intermediate" 
                         name="select" 
                         value="intermediate" 
-                        checked={difficulty === 'intermediate'} 
-                        onClick={() => setDifficulty('intermediate')}
+                        checked={radioDifficulty === 'intermediate'} 
+                        onClick={() => setRadioDifficulty('intermediate')}
                     />
                     <label for="intermediate">
                     <h2 className="heading-secondary heading-radio">Intermediate</h2>
@@ -47,8 +47,8 @@ const SearchForm = ({difficulty, setDifficulty}) => (
                         id="advanced" 
                         name="select" 
                         value="advanced" 
-                        checked={difficulty === 'advanced'} 
-                        onClick={() => setDifficulty('advanced')}
+                        checked={radioDifficulty === 'advanced'} 
+                        onClick={() => setRadioDifficulty('advanced')}
                     />
                     <label for="advanced">
                     <h2 className="heading-secondary heading-radio">Advanced</h2>

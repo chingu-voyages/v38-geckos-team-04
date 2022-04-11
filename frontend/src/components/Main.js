@@ -4,13 +4,13 @@ import ResultsList from './ResultsList';
 import '../sass/components/main.scss';
 
 function Main() {
-    const [difficulty, setDifficulty] = useState('beginner');
+    const [radioDifficulty, setRadioDifficulty] = useState('beginner');
     return (
         <Fragment>
             <main className='main'>
             <h1 className='heading-primary'>abb - always be building</h1>
-                <SearchForm difficulty={difficulty} setDifficulty={setDifficulty}/>
-                <ResultsList difficulty={difficulty}/>
+                <SearchForm radioDifficulty={radioDifficulty} setRadioDifficulty={setRadioDifficulty}/>
+                <ResultsList radioDifficulty={radioDifficulty}/>
             </main>
         </Fragment>
     )
