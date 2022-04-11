@@ -20,6 +20,7 @@ const projectSchema = new Schema({
         required: true
     },
     category: [String],
-    epics: [String]
-
+    epics: [String],
+    "links_to_resource": [String],
+    
 });
