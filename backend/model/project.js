@@ -33,5 +33,8 @@ const projectSchema = new Schema({
         type: Array,
         of: String
     },
-    examples: []
+    examples: {
+        type: Array,
+        of: Mixed
+    }
 });
