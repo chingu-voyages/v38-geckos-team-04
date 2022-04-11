@@ -24,7 +24,11 @@ const projectSchema = new Schema({
         of: String,
         required: true
     },
-    epics: [String],
+    epics: {
+        type: Array,
+        of: String,
+        required: true
+    },
     "links_to_resource": [String],
     examples: []
 });
