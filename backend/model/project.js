@@ -8,6 +8,12 @@ const projectSchema = new Schema({
         lowercase: true,
         required: true,
         trim: true
-    },
+    }, 
+    tier: {
+        type: String,
+        lowercase: true,
+        required: true,
+        trim: true
+    }
 
 });
