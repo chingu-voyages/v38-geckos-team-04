@@ -8,7 +8,7 @@ to the Views.
 
 const fs = require('fs');
 const path = require('path');
-const project = require('./model/project');
+const project = require('../model/project');
 
 /**
  * @description
@@ -23,20 +23,15 @@ const project = require('./model/project');
  * @returns {void}
  */
 const appController = (req, res, next) => {
-    // create dummy javascript object
-    const appIdea = {
-        id: Math.random(),
-        name: "blog",
-        category: "full stack",
-        difficulty: "intermediate",
-        summary: "a blog web app",
-    };
-
-    // convert object to json
-    const dummyJSON = JSON.stringify(appIdea);
-
-    // set the content-type header, response status and send the json data
-    res.setHeader("Content-Type", "application/json").status(200).send(dummyJSON);
+    const JSONFile = path.join(__dirname, "..", "..", "schema.json");
+   
+    fs.readFile(JSONFile, "utf8", (err, content) => {
+        if (err) {
+            console.log(err);
+            returrn;
+        }
+        res.setHeader("Content-Type", "application/json").status(200).send(content);
+    });
 }
 
 // export appController
