@@ -18,6 +18,7 @@ const projectSchema = new Schema({
     summary: {
         type: String,
         required: true
-    }
+    },
+    category: [String],
 
 });
