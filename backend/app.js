@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const { ServerApiVersion } = require('mongodb');
 const mongoose = require('mongoose');
+const fs = require('fs');
 
 // import main route
 const API = require('./routes/api');
