@@ -1,4 +1,4 @@
-import { Fragment }from 'react'
+import { Fragment } from 'react'
 import SearchForm from './SearchForm';
 import ResultsList from './ResultsList';
 import '../sass/components/main.scss';
