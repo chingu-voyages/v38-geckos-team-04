@@ -36,5 +36,6 @@ const projectSchema = new Schema({
     examples: {
         type: Array,
         of: Mixed
-    }
+    },
+    challenge: String
 });
