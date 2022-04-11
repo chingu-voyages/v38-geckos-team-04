@@ -20,5 +20,6 @@ const projectSchema = new Schema({
         required: true
     },
     category: [String],
+    epics: [String]
 
 });
