@@ -23,6 +23,10 @@ const apiControl = (req, res) => {
         // extract name from the payload
         const { name } = req.body;
 
+        Project.find({tier: name}).exec((err, result) => {
+
+        });
+
         // set headers, status and send html content
         res.setHeader("Content-Type", "text/html")
         .status(200)
