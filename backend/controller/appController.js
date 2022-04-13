@@ -6,6 +6,7 @@ Controller that bridges the gap. The Controller talks to the Model and sends tha
 to the Views.
 */
 
+
 /**
  * @description
  * This function will receive the request and response objects and handle the request
@@ -19,20 +20,11 @@ to the Views.
  * @returns {void}
  */
 const appController = (req, res, next) => {
-    // create dummy javascript object
-    const appIdea = {
-        id: Math.random(),
-        name: "blog",
-        category: "full stack",
-        difficulty: "intermediate",
-        summary: "a blog web app",
-    };
+        // set headers, status and send html content
+        res.setHeader("Content-Type", "text/html")
+        .status(200)
+        .send("<h1>Develapp</h1>");
 
-    // convert object to json
-    const dummyJSON = JSON.stringify(appIdea);
-
-    // set the content-type header, response status and send the json data
-    res.setHeader("Content-Type", "application/json").status(200).send(dummyJSON);
 }
 
 // export appController

@@ -1,14 +1,18 @@
 {
-  "name": "app-finder",
+  "name": "develapp",
   "version": "1.0.0",
   "description": "An app that provides project ideas to build and grow your skills",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "frontend": "cd ../frontend/ && npm start",
+    "backend": "nodemon app.js",
+    "start": "concurrently --kill-others-on-fail \"npm run frontend\" \"npm run backend\"",
+    "build": "node app.js"
   },
   "author": "Jacek, Lauren, Moody",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^7.1.0",
     "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
   },
