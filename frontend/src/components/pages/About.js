@@ -1,4 +1,6 @@
-import { Fragment } from 'react'
+import { Fragment } from 'react';
+// How do I link to the scss file
+// import '.../sass/components/about.scss';
 
 function About() {
     return <Fragment>
