@@ -1,5 +1,3 @@
-//This is a demo route
-
 // import expressjs
 const express = require('express');
 
