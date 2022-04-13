@@ -74,6 +74,6 @@ The list of dependencies used in the backend are :
     - Run `npm install` to install the packages for the backend
     - Remain in the backend folder and run `npm start'
 
-In the package.json file you will find the scripts for development and production. To be sure, if you want to deploy to heroku use the `build` script.
+In the package.json file you will find the scripts for development and production. To be sure, if you want to deploy to heroku use the `start` script.
 
 
