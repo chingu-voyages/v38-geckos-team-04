@@ -14,8 +14,6 @@ to the Views.
  * 
  * @param {object} req This is the request object. It contains the request methods and properties.
  * @param {object} res This is the response object. It contains the response methods and properties.
- * @param {function} next This function is used to call the next middleware in order not to block 
- * code execution. This is optional.
  * 
  * @returns {void}
  */
