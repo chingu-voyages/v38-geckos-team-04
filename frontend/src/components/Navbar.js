@@ -1,13 +1,14 @@
 import { Fragment }from 'react'
 import { Link } from 'react-router-dom';
+import '../sass/components/navbar.scss';
 
 function Navbar() {
     return <Fragment>
-        <nav>
+        <nav className='navbar'>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/learn">Learn</Link></li>
+                <li className='nav-item'><Link to="/">Home</Link></li>
+                <li className='nav-item'><Link to="/about">About</Link></li>
+                <li className='nav-item'><Link to="/learn">Learn</Link></li>
             </ul>
         </nav>    
     </Fragment>
