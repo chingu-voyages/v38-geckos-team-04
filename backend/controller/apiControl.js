@@ -23,6 +23,7 @@ const apiControl = (req, res) => {
         // extract name from the payload
         const { name } = req.body;
 
+        // query the database to find data matching the request
         Project.find({tier: name}).exec((err, result) => {
                 // add better error handling
                 if (err) return;
