@@ -17,7 +17,7 @@ to the Views.
  * 
  * @returns {void}
  */
-const appController = (req, res) => {
+const apiControl = (req, res) => {
         // set headers, status and send html content
         res.setHeader("Content-Type", "text/html")
         .status(200)
@@ -25,4 +25,4 @@ const appController = (req, res) => {
 }
 
 // export appController
-module.exports = appController;
+module.exports = apiControl;
