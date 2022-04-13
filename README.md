@@ -9,7 +9,7 @@
 
 ## Overview
 
-One difficulty in learning how to code is figuring out which project to build to improve your skills. Most tutorials simply build a to-do app. Develapp takes you beyond to-do list apps and helps you find project ideas to build and include in your portfolio. Develapp is made for you so that you can **always be building**.
+One difficulty in learning how to code is figuring out which project to build to improve your skills. Most tutorials simply build a to-do app. Develapp takes you beyond to-do list apps and helps you find projects you can build and be proud to include in your portfolio. Develapp is made for you so that you can **always be building**.
 
 This project was built by a remote team during the `chingu` voyage 38.
 
