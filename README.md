@@ -17,12 +17,12 @@ This project was built by a remote team during the `chingu` voyage 38.
 
 <br>
 
-## SCREENSHOTS 📸📸📸
+## Screenshots 📸📸📸
 Include screenshots here.
 
 <br>
 
-## FEATURES ✨✨✨
+## Features ✨✨✨
 The features of the `Develapp` app are -
 - users can find project ideas
 - project ideas are grouped into 
@@ -36,7 +36,7 @@ The features of the `Develapp` app are -
 
 <br>
 
-## DEPENDENCIES 📦📦📦
+## Dependencies 📦📦📦
 The list of dependencies used in the frontend are :
 
 ```javascript
@@ -62,7 +62,7 @@ The list of dependencies used in the backend are :
 ```
 <br>
 
-## HOW TO RUN 🚀🚀🚀
+## How to run 🚀🚀🚀
 * First, copy the url of this project
 * Then open your terminal on your local computer and -
     - navigate to the location you want to create the project in (eg - home or c:/)
@@ -78,7 +78,7 @@ In the package.json file you will find the scripts for development and productio
 
 <br>
 
-## ACKNOWLEDGEMENTS 👏👏👏
+## Acknowledgements 👏👏👏
 This app is based off of `Florin Pop's` repository found [here](https://github.com/florinpop17/app-ideas). It is an amazing resource for this project. Whereas, the repository has an MIT license, which permits us to use it for free, nevertheless, we still wanna say **thank you** to `Florin Pop` for putting it out there.
 
 Last, but not the least, is `Jim Medlock`, who incidentally is mentioned as a contributor in `Florin Pop's` repository [here](https://github.com/florinpop17/app-ideas#main-contributors-). The gratitude is apparently two-fold:
