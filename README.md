@@ -34,3 +34,29 @@ The features of the `Develapp` app are -
 
 <br>
 
+## DEPENDENCIES 📦📦📦
+The list of dependencies used in the frontend are :
+
+```javascript
+    "@testing-library/jest-dom"
+    "@testing-library/react"
+    "@testing-library/user-event"
+    "react"
+    "react-dom"
+    "react-scripts"
+    "web-vitals"
+    "sass"
+    "react-router-dom"
+```
+The list of dependencies used in the backend are :
+
+```javascript
+    "concurrently"
+    "dotenv"
+    "nodemon"
+    "express"
+    "mongodb"
+    "mongoose"
+```
+<br>
+
