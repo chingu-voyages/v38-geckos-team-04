@@ -29,7 +29,6 @@ The features of the `Develapp` app are -
     * intermediate
     * advanced
 - users can be redirected to `chingu` project showcase page
-- users can find project ideas by name
 - users can find project ideas by clicking either one of the three categories on the home page
 - and more coming soon.
 
