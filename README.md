@@ -74,7 +74,7 @@ The list of dependencies used in the backend are :
 <br>
 
 ## Acknowledgements 👏👏👏
-This app is based off of `Florin Pop's` repository found [here](https://github.com/florinpop17/app-ideas). It is an amazing resource for this project. Whereas, the repository has an MIT license, which permits us to use it for free, nevertheless, we still wanna say **thank you** to `Florin Pop` for putting it out there.
+This app is based off of `Florin Pop's` repository found [here](https://github.com/florinpop17/app-ideas). It is an amazing resource for this project. Whereas, the repository has an `MIT license`, which permits us to use it for free, nevertheless, we still wanna say **thank you** to `Florin Pop` for putting it out there.
 
 Last, but not the least, is `Jim Medlock`, who incidentally is mentioned as a contributor in `Florin Pop's` repository [here](https://github.com/florinpop17/app-ideas#main-contributors-). The gratitude is apparently two-fold:
 - for the app ideas repo
