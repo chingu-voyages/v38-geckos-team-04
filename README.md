@@ -44,7 +44,6 @@ The list of dependencies used in the frontend are :
     "react"
     "react-dom"
     "react-scripts"
-    "web-vitals"
     "sass"
     "react-router-dom"
 ```
