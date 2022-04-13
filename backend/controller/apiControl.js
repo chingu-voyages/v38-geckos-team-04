@@ -27,7 +27,7 @@ const apiControl = (req, res) => {
                 // add better error handling
                 if (err) return;
 
-                // set headers, status and send html content
+                // set headers, status and send json data
                 res.setHeader("Content-Type", "application/json")
                 .status(200)
                 .send(result);
