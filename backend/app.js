@@ -1,3 +1,4 @@
+// import dotenv, express, serverApiVerson and mongoose modules
 require('dotenv').config();
 const express = require('express');
 const { ServerApiVersion } = require('mongodb');
