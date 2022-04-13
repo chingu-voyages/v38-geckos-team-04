@@ -6,8 +6,8 @@
   "scripts": {
     "frontend": "cd ../frontend/ && npm start",
     "backend": "nodemon app.js",
-    "start": "concurrently --kill-others-on-fail \"npm run frontend\" \"npm run backend\"",
-    "build": "node app.js"
+    "serve": "concurrently --kill-others-on-fail \"npm run frontend\" \"npm run backend\"",
+    "start": "node app.js"
   },
   "author": "Jacek, Lauren, Moody",
   "license": "MIT",

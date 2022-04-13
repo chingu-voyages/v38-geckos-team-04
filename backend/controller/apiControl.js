@@ -6,6 +6,8 @@ Controller that bridges the gap. The Controller talks to the Model and sends tha
 to the Views.
 */
 
+// import the project module
+const Project = require('../model/project');
 
 /**
  * @description
@@ -14,18 +16,24 @@ to the Views.
  * 
  * @param {object} req This is the request object. It contains the request methods and properties.
  * @param {object} res This is the response object. It contains the response methods and properties.
- * @param {function} next This function is used to call the next middleware in order not to block 
- * code execution. This is optional.
  * 
  * @returns {void}
  */
-const appController = (req, res, next) => {
-        // set headers, status and send html content
-        res.setHeader("Content-Type", "text/html")
-        .status(200)
-        .send("<h1>Develapp</h1>");
+const apiControl = (req, res) => {
+        // extract name from the payload
+        const { name } = req.body;
 
+        // query the database to find data matching the request
+        Project.find({tier: name}).exec((err, result) => {
+                // add better error handling
+                if (err) return;
+
+                // set headers, status and send json data
+                res.setHeader("Content-Type", "application/json")
+                .status(200)
+                .send(result);
+        });
 }
 
 // export appController
-module.exports = appController;
+module.exports = apiControl;
