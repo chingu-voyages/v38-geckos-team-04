@@ -6,9 +6,10 @@
 ![](https://img.shields.io/badge/Team-chingu.v38.geckos.04-informational?style=plastic&labelColor=inactive)
 
 <br>
+
 ## Overview
 
-This app was created for the Chingu Voyage 38. 
+One difficulty in learning how to code is figuring out which project to build to improve your skills. Most tutorials simply build a to-do app, probably because the tutors too having a hard time figuring out which projects to build. Perhaps they just want to keep it simple. Develapp is providing solution to developers and tutors who are looking for project ideas to build and include in their portfolio or tutorials. Develapp is made for you so that you can **always be building**.
 
 #### LIVE LINK : https://
 
