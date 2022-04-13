@@ -1,7 +1,10 @@
+// import mongoose module
 const mongoose = require('mongoose');
 
+// extract Schema and model constructor functions from mongoose module
 const { Schema, model } = mongoose;
 
+// define database schema
 const projectSchema = new Schema({
     name: {
         type: String,
@@ -40,6 +43,8 @@ const projectSchema = new Schema({
     challenge: String
 });
 
+// define a model for each document based on schema
 const Project = model("Project", projectSchema);
 
+// export the project model
 module.exports = Project;
