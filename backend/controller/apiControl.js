@@ -20,6 +20,8 @@ const Project = require('../model/project');
  * @returns {void}
  */
 const apiControl = (req, res) => {
+        // extract name from the payload
+        const { name } = req.body;
 
         // set headers, status and send html content
         res.setHeader("Content-Type", "text/html")
