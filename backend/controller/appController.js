@@ -20,6 +20,7 @@ to the Views.
  * @returns {void}
  */
 const appController = (req, res, next) => {
+        // set headers, status and send html content
         res.setHeader("Content-Type", "text/html")
         .status(200)
         .send("<h1>Develapp</h1>");
