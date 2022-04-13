@@ -6,6 +6,8 @@ Controller that bridges the gap. The Controller talks to the Model and sends tha
 to the Views.
 */
 
+// import the project module
+const Project = require('../model/project');
 
 /**
  * @description
@@ -18,6 +20,7 @@ to the Views.
  * @returns {void}
  */
 const apiControl = (req, res) => {
+
         // set headers, status and send html content
         res.setHeader("Content-Type", "text/html")
         .status(200)
