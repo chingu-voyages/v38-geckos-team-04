@@ -8,7 +8,7 @@ const apiControl = require('../controller/apiControl');
 const router = express.Router();
 
 // set up get route for visit to localhost:5000/
-router.get('/', apiControl);
+router.post('/', apiControl);
 
 // export router
 module.exports = router;
