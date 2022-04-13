@@ -24,7 +24,10 @@ const apiControl = (req, res) => {
         const { name } = req.body;
 
         Project.find({tier: name}).exec((err, result) => {
+                // add better error handling
+                if (err) return;
 
+                
         });
 
         // set headers, status and send html content
