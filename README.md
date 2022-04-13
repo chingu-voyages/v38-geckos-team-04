@@ -76,4 +76,7 @@ The list of dependencies used in the backend are :
 
 In the package.json file you will find the scripts for development and production. To be sure, if you want to deploy to heroku use the `start` script.
 
+## ACKNOWLEDGEMENTS 👏👏👏
+
+
 
