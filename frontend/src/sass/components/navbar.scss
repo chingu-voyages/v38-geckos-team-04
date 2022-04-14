@@ -3,32 +3,20 @@
 
 .navbar {
     display: flex;
-    ul {
-        display: flex;
+
+    &__logo {
+        color: $mauve;
+        font-size: 3rem;
+        font-weight: 400;
     }
-    li {
-        display: inline;
-        padding: 1rem 1rem;
-        a {
-            color: #E0E1DD;
-            text-decoration: none;
-            padding: 1rem 2rem;
-        &:hover {
-            background-color: $mauve;
-            border-radius: 30px;
-            outline: none;
-            box-shadow: 0px 0px 10px $mauve;
-            color: rgb(74, 74, 74);
-        }
-    }
-}
-    // styles for devices with a min-width of 600px
-    @include breakpoint(37.5em) {
+    
+    // // styles for devices with a min-width of 600px
+    // @include breakpoint(37.5em) {
         
-    }
+    // }
 
-    // styles for devices with a min-width of 900px
-    @include breakpoint(56.25em) {
-
-    }
+    // // styles for devices with a min-width of 900px
+    // @include breakpoint(56.25em) {
+    //     grid-column: 2 / 12;
+    // }
 }
