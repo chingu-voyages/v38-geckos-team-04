@@ -2,7 +2,7 @@
 @import "../abstract/mixins.scss";
 
 .navbar {
-    height: 100%;
+    display: flex;
     ul {
         display: flex;
     }
