@@ -11,12 +11,11 @@
     @include breakpoint(56.25em) {
         padding: 3rem 5rem 5rem 5rem;
         z-index: 1;
-        position:fixed;
         width:100%;
         ul {
-            float:right;
-            padding: 0;
-            margin: 0;
+            position: absolute;
+            right: 10px;
+            top: 40%;
         }
         li {
             display: inline;
@@ -24,7 +23,7 @@
             a {
                 color: #E0E1DD;
                 text-decoration: none;
-                padding: 14px 16px;
+                padding: 10px 30px;
             &:hover {
                 background-color: $mauve;
                 border-radius: 30px;
