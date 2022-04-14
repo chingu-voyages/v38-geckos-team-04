@@ -1,14 +1,18 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import '../sass/components/searchform.scss';
 import '../sass/base/typography.scss';
 import icon from '../assets/search-icon.png';
 
-const SearchForm = () => {
+const SearchForm = ({generateResultsData, filterResultsData}) => {
     const [radioDifficulty, setRadioDifficulty] = useState('beginner');
 
     const difficultyHandler = (value) => {
         setRadioDifficulty(value);
     }
+
+    useEffect(() => {
+        generateResultsData(radioDifficulty);        
+    }, [radioDifficulty]);
 
     return (
     <Fragment>
