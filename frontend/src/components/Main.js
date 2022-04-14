@@ -51,11 +51,11 @@ const appIdeas= [
 function Main() {
     const [resultsData, setResultsData] = useState([]);
 
-    function setResultsDataHandler (value) {
+    const setResultsDataHandler = (value) => {
         setResultsData(value);
     }
 
-    function fetchResultsData (difficulty) {
+    const fetchResultsData = (difficulty) => {
          
         // Fetching data using difficulty variable
 
@@ -63,7 +63,7 @@ function Main() {
         setResultsDataHandler([...appIdeas]); 
     }
 
-    function generateResultsData (difficulty) {
+    const generateResultsData = (difficulty) => {
         fetchResultsData(difficulty);
     }
     
