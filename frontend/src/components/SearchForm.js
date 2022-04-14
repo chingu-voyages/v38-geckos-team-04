@@ -3,7 +3,7 @@ import '../sass/components/searchform.scss';
 import '../sass/base/typography.scss';
 import icon from '../assets/search-icon.png';
 
-const SearchForm = ({generateResultsData}) => {
+const SearchForm = ({generateResultsData, filterResultsData}) => {
     const [radioDifficulty, setRadioDifficulty] = useState('beginner');
 
     const difficultyHandler = (value) => {
