@@ -1,21 +1,30 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import '../sass/components/searchform.scss';
 import '../sass/base/typography.scss';
 import icon from '../assets/search-icon.png';
 
-const SearchForm = () => {
+const SearchForm = ({generateResultsData, filterResultsData}) => {
     const [radioDifficulty, setRadioDifficulty] = useState('beginner');
 
     const difficultyHandler = (value) => {
         setRadioDifficulty(value);
     }
 
+    useEffect(() => {
+        generateResultsData(radioDifficulty);        
+    }, [radioDifficulty]);
+
     return (
     <Fragment>
          <div className="search-form">
             <div className="text-input-container">
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Search for an app idea or simply choose the difficulty level below..."/> 
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Search for an app idea or simply choose the difficulty level below..."
+                /> 
                 <img className="search-icon" src={icon} alt="search"/>
             </div>
 
