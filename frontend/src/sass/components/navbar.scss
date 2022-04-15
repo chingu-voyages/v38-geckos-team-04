@@ -1,0 +1,54 @@
+@import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
+
+.navbar {
+    color: $platinum;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+
+    // styles for devices with a min-width of 600px
+    @include breakpoint(37.5em) {
+        padding: 2rem;
+    }
+
+    @include breakpoint(56.25em) {
+        padding: 0.1rem 5rem;
+    }
+
+    &__logo {
+        font-size: 2rem;
+
+        @include breakpoint(37.5em) {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+
+    &__nav {
+        list-style: none;
+
+        &--item {
+            display: inline-block;
+            padding: 0 1.3rem;
+            text-decoration: none;
+            width: 8rem;
+        }
+        
+        &--link {
+            color: inherit;
+            padding: 0.5rem 0.9rem;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $mauve;
+                border-radius: 0.3rem;
+                box-shadow: 0 0 1rem $mauve;
+                color: $russian-violet;
+                outline: none;
+            }
+        }
+    }
+}

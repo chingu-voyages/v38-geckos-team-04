@@ -13,7 +13,6 @@ const App = () => (
     <Routes>
       <Route path="/about" element={<About />} />
       <Route path="/" element={<Main />} />
-      {/* <Route path="*" */}
     </Routes>
 
     <Footer />

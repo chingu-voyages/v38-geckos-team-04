@@ -4,19 +4,19 @@
 .header {
     background-color: $french-violet;
     grid-area: hero;
-    padding: 5rem 2rem;
     position: relative;
+    padding: 1rem 1rem;
 
         // styles for devices with a min-width of 600px
         @include breakpoint(37.5em) {
             // this is just a placeholder value
-            padding: 5rem;
+            padding: 1rem 3rem;
         }
 
         // styles for devices with a min-width of 900px
         @include breakpoint(56.25em) {
             // this is just a placeholder value
-            padding: 5rem 12rem;
+            padding: 1rem 12rem;
         }
 
     &__heading {

@@ -1,0 +1,20 @@
+@import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
+
+.about {
+  color: $rich-black-fogra-29;
+  grid-area: main;
+  height: calc(100vh - 10vh - 15vh);
+  padding: 2rem;
+
+  // styles for devices with a min-width of 600px
+  @include breakpoint(37.5em) {
+      padding: 3rem 5rem 5rem 5rem;
+  }
+
+  // styles for devices with a min-width of 900px
+  @include breakpoint(56.25em) {
+      grid-column: 2 / 12;
+      padding: 3rem 5rem 5rem 5rem;
+  }
+}
