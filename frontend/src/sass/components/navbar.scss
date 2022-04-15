@@ -6,17 +6,22 @@
 
     &__logo {
         color: $mauve;
-        font-size: 3rem;
-        font-weight: 400;
+        
+
+        @include breakpoint(56.25em) {
+            color: $mauve;
+            font-size: 3rem;
+            font-weight: 400;
+        }
     }
     
-    // // styles for devices with a min-width of 600px
-    // @include breakpoint(37.5em) {
+    // styles for devices with a min-width of 600px
+    @include breakpoint(37.5em) {
         
-    // }
+    }
 
-    // // styles for devices with a min-width of 900px
-    // @include breakpoint(56.25em) {
-    //     grid-column: 2 / 12;
-    // }
+    // styles for devices with a min-width of 900px
+    @include breakpoint(56.25em) {
+        
+    }
 }
