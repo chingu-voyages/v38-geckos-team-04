@@ -2,6 +2,8 @@
 @import "../abstract/mixins.scss";
 
 .navbar {
+    color: $heliotrope;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +19,6 @@
     }
 
     &__logo {
-        color: $mauve;
         font-size: 2rem;
 
         @include breakpoint(37.5em) {
@@ -36,7 +37,7 @@
         }
 
         &--link {
-            color: $mauve;
+            color: inherit;
             text-decoration: none;
 
             &:hover {
