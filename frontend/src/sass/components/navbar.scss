@@ -21,9 +21,8 @@
     &__logo {
         color: $mauve;
         font-size: 2rem;
-        
-        @include breakpoint(56.25em) {
-            color: $mauve;
+
+        @include breakpoint(37.5em) {
             font-size: 3rem;
             font-weight: 400;
         }
