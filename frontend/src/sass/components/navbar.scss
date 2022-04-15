@@ -38,6 +38,10 @@
         &--link {
             color: $mauve;
             text-decoration: none;
+
+            &:active {
+                border-bottom: 0.1rem solid $heliotrope;
+            }
         }
     }
 }
