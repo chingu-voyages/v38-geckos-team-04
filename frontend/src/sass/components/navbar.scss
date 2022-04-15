@@ -6,6 +6,12 @@
     align-items: center;
     justify-content: space-between;
 
+    @include breakpoint(56.25em) {
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
     &__logo {
         color: $mauve;
         
