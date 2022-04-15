@@ -11,7 +11,7 @@ const API = require('./routes/api');
 const app = express();
 
 // read the PORT environment variable into port
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.DB_URI;
 
 // parse application/json content-type
