@@ -5,6 +5,7 @@
     background-color: $french-violet;
     grid-area: hero;
     position: relative;
+    padding: 1rem 1rem;
 
         // styles for devices with a min-width of 600px
         @include breakpoint(37.5em) {
