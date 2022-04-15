@@ -5,7 +5,6 @@
     background-color: $russian-violet;
     grid-area: footer;
     padding: 5rem 2rem 0;
-    height: 100%;
 
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
