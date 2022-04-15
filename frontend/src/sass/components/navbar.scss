@@ -2,7 +2,7 @@
 @import "../abstract/mixins.scss";
 
 .navbar {
-    color: $heliotrope;
+    color: $platinum;
 
     display: flex;
     align-items: center;
@@ -43,10 +43,9 @@
             &:hover {
                 background-color: $mauve;
                 border-radius: 0.3rem;
+                box-shadow: 0 0 1rem $mauve;
+                color: $russian-violet;
                 outline: none;
-                box-shadow: 0px 0px 10px $mauve;
-                color: rgb(74, 74, 74);
-                // border-bottom: 0.3rem solid $russian-violet;
             }
         }
     }
