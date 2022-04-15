@@ -13,9 +13,7 @@
     }
 
     @include breakpoint(56.25em) {
-        align-items: center;
-        justify-content: space-between;
-
+        padding: 0.1rem 5rem;
     }
 
     &__logo {
