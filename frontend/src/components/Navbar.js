@@ -7,8 +7,8 @@ function Navbar() {
         <nav className='navbar'>
             <div className='navbar__logo'>develapp</div>
             <ul className='navbar__nav'>
-                <li className='navbar__nav--item'><Link to="/">Home</Link></li>
-                <li className='navbar__nav--item'><Link to="/about">About</Link></li>
+                <li className='navbar__nav--item'><Link to="/" className='navbar__nav--link'>Home</Link></li>
+                <li className='navbar__nav--item'><Link to="/about" className='navbar__nav--link'>About</Link></li>
             </ul>
         </nav>    
     </Fragment>
