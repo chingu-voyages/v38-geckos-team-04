@@ -39,8 +39,8 @@
             color: $mauve;
             text-decoration: none;
 
-            &:active {
-                border-bottom: 0.1rem solid $heliotrope;
+            &:hover {
+                border-bottom: 0.3rem solid $heliotrope;
             }
         }
     }
