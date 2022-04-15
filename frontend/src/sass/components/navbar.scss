@@ -15,6 +15,10 @@
             font-weight: 400;
         }
     }
+
+    &__nav {
+        list-style: none;
+    }
     
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
