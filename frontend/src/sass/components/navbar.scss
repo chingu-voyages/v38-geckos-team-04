@@ -18,6 +18,12 @@
 
     &__nav {
         list-style: none;
+
+        &--item {
+            display: inline;
+            padding: 0 1.3rem;
+            text-decoration: none;
+        }
     }
     
     // styles for devices with a min-width of 600px
