@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.5rem 2rem;
 
     @include breakpoint(56.25em) {
         align-items: center;
@@ -14,8 +15,8 @@
 
     &__logo {
         color: $mauve;
+        font-size: 2rem;
         
-
         @include breakpoint(56.25em) {
             color: $mauve;
             font-size: 3rem;
