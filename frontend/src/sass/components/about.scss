@@ -1,7 +1,7 @@
 @import "../abstract/variables.scss";
 @import "../abstract/mixins.scss";
 
-#about {
+.about {
   height: calc(100vh - 15vh - 7rem);
         // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
