@@ -11,11 +11,11 @@
 
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
-        padding: 2rem;
+        // padding: 2rem;
     }
 
     @include breakpoint(56.25em) {
-        padding: 0.1rem 5rem;
+        // padding: 0.1rem 5rem;
     }
 
     &__logo {
