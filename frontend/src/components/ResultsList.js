@@ -8,12 +8,12 @@ const ResultsList = ({resultsData}) => (
         <div className="results-container">
             {resultsData.map(app => 
 
-                        <Result 
-                            key={app.id}
-                            name={app.name} 
-                            description={app.description} 
-                            link={app.link} 
-                        />
+                <Result 
+                    key={app.id}
+                    name={app.name} 
+                    description={app.description} 
+                    link={app.link} 
+                />
             
             )}   
         </div>
