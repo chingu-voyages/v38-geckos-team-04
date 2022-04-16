@@ -55,24 +55,26 @@ const SearchForm = ({setResultsDataHandler}) => {
         setRadioDifficulty(value);
     }
 
-    const fetchResultsData = (difficulty) => {
-         
-        // Fetching data using difficulty variable
-
-        // Fetch function
-
-        // Temporalily Assigning mocked data
-        const data = [...appIdeas]; 
-
-        // Returning fetched data
-        return data
-    }
-
     useEffect(() => {
 
-        let data = fetchResultsData(radioDifficulty);
-        setResultsDataHandler(data);        
-
+        fetch("/api", {
+            // set the method to post
+            method: 'POST',
+            // convert the payload object to json
+            body: JSON.stringify(radioDifficulty),
+            // inform server that it is receiving json document
+            headers: {"Content-Type": "application/json"}
+        }).then(response => {
+            // convert server response to json
+            return response.json();
+        }).then(result => {
+            // call set state function (setResult) passed to this component
+            // as props to update resultsData in Main component with the
+            // result of the fetch
+            setResultsDataHandler(result); 
+        })
+        .catch(error => {console.warn(error.message, "failed!")});
+     
     }, [radioDifficulty]);
 
     return (
