@@ -23,25 +23,11 @@ const apiControl = (req, res) => {
         // extract name from the payload
         const { name } = req.body;
 
-        // check if we are reaching this stage
-        console.log('Hello welcome to apiControl');
-
-        // check if payload is coming
-        
-        console.log('Payload: ',name);
-
-        // check res
-        // console.log('Res: ', res);
-
         // query the database to find data matching the request
         Project.find({tier: name}).exec((err, result) => {
+                
                 // add better error handling
-
-                //check if the data is fetched correctly
-                // console.log(result);
-
                 if (err) return;
-
 
                 // set headers, status and send json data
                 res.setHeader("Content-Type", "application/json");
