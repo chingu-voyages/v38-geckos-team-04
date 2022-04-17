@@ -12,7 +12,7 @@ function Main() {
         <Fragment>
             <main className='main'>
             <h1 className='heading-primary'>
-             always
+             always 
              be 
              building</h1>
                 <SearchForm />

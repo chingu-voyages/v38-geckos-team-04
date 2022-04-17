@@ -13,7 +13,7 @@
 .heading-primary {
     @extend .heading;
     font-size: 3rem;
-    white-space:pre-wrap;
+    white-space: pre-line;
 
      // styles for devices with a min-width of 600px
      @include breakpoint(37.5em) {
