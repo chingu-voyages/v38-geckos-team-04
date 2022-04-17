@@ -1,8 +1,0 @@
-@import "../abstract/variables.scss";
-@import "../abstract/mixins.scss";
-
-.results-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
