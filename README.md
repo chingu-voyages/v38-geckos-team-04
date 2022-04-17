@@ -12,11 +12,14 @@ One difficulty in learning how to code is figuring out which project to build to
 
 This project was built by a remote team during the `chingu` voyage 38.
 
-**Live link:** --- You can find the app [here]()
+**Live link:** --- You can find the app [here](https://devel-app.herokuapp.com/)
 
 <br>
 
 ## Screenshots 📸📸📸
+[<img src="./assets/mobile.png" width="250px" height="1200px" alt="screenshot of develapp app on a mobile phone">](./assets/mobile.png)
+[<img src="./assets/tablets_ipads.png" width="550px" height="800px" alt="screenshot of develapp app on a tablet or ipad">](./assets/tablets_ipads.png)
+[<img src="./assets/main.png" width="800px" height="700px" alt="screenshot of develapp app on a laptop or pc">](./assets/main.png)
 Include screenshots here.
 
 <br>
