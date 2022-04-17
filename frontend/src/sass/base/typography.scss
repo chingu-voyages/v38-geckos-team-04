@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;800&display=swap');
 @import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
 
 .heading {
     color: $russian-violet-2;
@@ -11,7 +12,7 @@
 
 .heading-primary {
     @extend .heading;
-    font-size: 5rem;
+    font-size: 3rem;
 
      // styles for devices with a min-width of 600px
      @include breakpoint(37.5em) {
