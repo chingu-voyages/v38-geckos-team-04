@@ -28,11 +28,7 @@ const options = {
 }
 
 // create database connection
-mongoose.connect(MONGODB_URI, options).then(result => {
-    console.log('Connected successfully to the Database');
-}).catch(error => {
-    console.log('Connection failed! Please ensure you have a network connection.');
-})
+mongoose.connect(MONGODB_URI, options)
 
 // create server
 app.listen(PORT, () => {
