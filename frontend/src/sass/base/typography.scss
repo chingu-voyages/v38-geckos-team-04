@@ -13,6 +13,7 @@
 .heading-primary {
     @extend .heading;
     font-size: 3rem;
+    text-align: center;
     white-space: pre-line;
 
      // styles for devices with a min-width of 600px
