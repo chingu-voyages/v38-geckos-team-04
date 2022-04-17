@@ -19,6 +19,7 @@ const MONGODB_URI = process.env.DB_URI;
 
 // parse application/json content-type
 app.use(express.json());
+app.use(express.static(PUBLIC));
 
 // use the mainRoute
 app.use("/api", API);
