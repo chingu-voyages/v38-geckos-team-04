@@ -19,7 +19,7 @@ This project was built by a remote team during the `chingu` voyage 38.
 ## Screenshots 📸📸📸
 [<img src="./assets/main.png" width="800px" height="700px" alt="screenshot of develapp app on a laptop or pc">](./assets/main.png)
 [<img src="./assets/tablets_ipads.png" width="550px" height="800px" alt="screenshot of develapp app on a tablet or ipad">](./assets/tablets_ipads.png)
-[<img src="./assets/mobile.png" width="200px" height="1200px" alt="screenshot of develapp app on a mobile phone">](./assets/mobile.png)
+[<img src="./assets/mobile.png" width="250px" height="1200px" alt="screenshot of develapp app on a mobile phone">](./assets/mobile.png)
 Include screenshots here.
 
 <br>
