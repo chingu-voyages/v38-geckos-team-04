@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useCallback } from 'react'
 import SearchForm from './SearchForm';
 import ResultsList from './ResultsList';
 import '../sass/components/main.scss';
@@ -6,9 +6,9 @@ import '../sass/components/main.scss';
 function Main() {
     const [resultsData, setResultsData] = useState([]);
 
-    const setResultsDataHandler = (value) => {
+    const setResultsDataHandler = useCallback((value) => {
         setResultsData(value);
-    }
+    }, []);
 
     return (
         <Fragment>
