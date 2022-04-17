@@ -5,6 +5,8 @@ const { ServerApiVersion } = require('mongodb');
 const mongoose = require('mongoose');
 const path = require('path');
 
+const PUBLIC = path.resolve(__dirname, "./frontend/build");
+
 // import main route
 const API = require('./routes/api');
 
