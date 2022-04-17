@@ -23,6 +23,9 @@ app.use(express.static(PUBLIC));
 
 // use the mainRoute
 app.use("/api", API);
+app.get("*", (req, res) => {
+    res.sendFile(`${PUBLIC}/index.html`);
+});
 
 // mongoose connection options
 const options = {
