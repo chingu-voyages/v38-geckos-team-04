@@ -12,6 +12,15 @@
 .heading-primary {
     @extend .heading;
     font-size: 5rem;
+
+     // styles for devices with a min-width of 600px
+     @include breakpoint(37.5em) {
+        // padding: 2rem;
+    }
+
+    @include breakpoint(56.25em) {
+        padding: 0.5rem 5rem;
+    }
 }
 
 .heading-secondary {
