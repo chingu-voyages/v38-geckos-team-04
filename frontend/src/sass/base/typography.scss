@@ -18,7 +18,7 @@
 
      // styles for devices with a min-width of 600px
      @include breakpoint(37.5em) {
-        // padding: 2rem;
+        font-size: 4rem;
     }
 
     @include breakpoint(56.25em) {
