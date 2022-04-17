@@ -7,6 +7,8 @@
     position: relative;
     padding: 1rem 1rem;
 
+    display: flex;
+
         // styles for devices with a min-width of 600px
         @include breakpoint(37.5em) {
             // this is just a placeholder value
