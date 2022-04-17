@@ -13,6 +13,10 @@
     color: $bdazzled-blue;
     font-size: 1.5rem;
 
+    &__text {
+      opacity: 0.5;
+    }
+
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
       // this is just a placeholder value
