@@ -11,7 +11,10 @@ function Main() {
     return (
         <Fragment>
             <main className='main'>
-            <h1 className='heading-primary'>always be building</h1>
+            <h1 className='heading-primary'>
+             always
+             be 
+             building</h1>
                 <SearchForm />
                 <ResultsList />
             </main>
