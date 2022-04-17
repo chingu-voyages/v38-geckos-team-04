@@ -12,7 +12,7 @@ One difficulty in learning how to code is figuring out which project to build to
 
 This project was built by a remote team during the `chingu` voyage 38.
 
-**Live link:** --- You can find the app [here]( https://devel-app.herokuapp.com/)
+**Live link:** --- You can find the app [here](https://devel-app.herokuapp.com/)
 
 <br>
 
