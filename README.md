@@ -17,6 +17,7 @@ This project was built by a remote team during the `chingu` voyage 38.
 <br>
 
 ## Screenshots 📸📸📸
+![app on laptop](assets/main.png)
 Include screenshots here.
 
 <br>
