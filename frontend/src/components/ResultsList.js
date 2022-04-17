@@ -9,9 +9,9 @@ const ResultsList = ({resultsData}) => (
             {resultsData.map(app => 
 
                 <Result 
-                    key={app.id}
+                    key={app._id}
                     name={app.name} 
-                    description={app.description} 
+                    description={app.summary.substring(0,100)+"..."} 
                     link={app.link} 
                 />
             

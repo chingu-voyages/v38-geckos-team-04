@@ -81,7 +81,7 @@ const SearchForm = ({setResultsDataHandler}) => {
         })
         .catch(error => {console.warn(error.message, "failed!")});
      
-    }, [radioDifficulty, setResultsDataHandler]);
+    }, [radioDifficulty]);
 
     return (
     <Fragment>
