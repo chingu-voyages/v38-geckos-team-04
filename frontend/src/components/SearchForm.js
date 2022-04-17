@@ -70,11 +70,13 @@ const SearchForm = ({setResultsDataHandler}) => {
             headers: {"Content-Type": "application/json"}
         }).then(response => {
             // convert server response to json
+            console.log(response);
             return response.json();
         }).then(result => {
             // call set state function (setResult) passed to this component
             // as props to update resultsData in Main component with the
             // result of the fetch
+            console.log(result);
             setResultsDataHandler(result); 
         })
         .catch(error => {console.warn(error.message, "failed!")});
