@@ -23,9 +23,15 @@ const apiControl = (req, res) => {
         // extract name from the payload
         const { name } = req.body;
 
+        // check if we are reaching this stage
+        console.log('Hello welcome to apiControl');
+
         // check if payload is coming
-        console.log('hello ');
-        console.log(name);
+        
+        console.log('Payload: ',name);
+
+        // check res
+        console.log('Res: ', res);
 
         // query the database to find data matching the request
         Project.find({tier: name}).exec((err, result) => {
