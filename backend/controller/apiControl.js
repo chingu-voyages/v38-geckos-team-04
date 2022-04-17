@@ -25,13 +25,14 @@ const apiControl = (req, res) => {
 
         // query the database to find data matching the request
         Project.find({tier: name}).exec((err, result) => {
+                
                 // add better error handling
                 if (err) return;
 
                 // set headers, status and send json data
-                res.setHeader("Content-Type", "application/json")
-                .status(200)
-                .send(result);
+                res.setHeader("Content-Type", "application/json");
+                res.status(200);
+                res.send(result);
         });
 }
 
