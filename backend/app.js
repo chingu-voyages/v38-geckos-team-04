@@ -31,6 +31,4 @@ const options = {
 mongoose.connect(MONGODB_URI, options)
 
 // create server
-app.listen(PORT, () => {
-    console.log(`Visit http://localhost:${PORT}/api on a browser`);
-});
+app.listen(PORT);
