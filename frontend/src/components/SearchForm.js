@@ -15,7 +15,7 @@ const SearchForm = () => {
          <div className="search-form">
             <div className="text-input-container">
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Search for an app idea or simply choose the difficulty level below..."/> 
+                <input type="text" id="name" name="name" placeholder="Coming soon..."/> 
                 <img className="search-icon" src={icon} alt="search"/>
             </div>
 
