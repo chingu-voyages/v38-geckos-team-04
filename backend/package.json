@@ -7,7 +7,8 @@
     "frontend": "cd ../frontend/ && npm start",
     "backend": "nodemon app.js",
     "serve": "concurrently --kill-others-on-fail \"npm run frontend\" \"npm run backend\"",
-    "start": "node app.js"
+    "start": "node app.js",
+    "heroku-postbuild": "cd ./frontend && npm install && npm run build"
   },
   "author": "Jacek, Lauren, Moody",
   "license": "MIT",
