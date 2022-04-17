@@ -61,7 +61,7 @@ const SearchForm = ({setResultsDataHandler}) => {
 
         const userSelect = {name: radioDifficulty};
 
-        fetch("/api", {
+        fetch("https://devel-app.herokuapp.com/api", {
             // set the method to post
             method: 'POST',
             // convert the payload object to json
