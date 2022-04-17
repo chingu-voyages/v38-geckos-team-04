@@ -11,6 +11,7 @@
     justify-content: center;
 
     color: $bdazzled-blue;
+    font-size: 1.5rem;
 
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
