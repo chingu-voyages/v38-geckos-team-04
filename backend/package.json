@@ -1,0 +1,24 @@
+{
+  "name": "develapp",
+  "version": "1.0.0",
+  "description": "An app that provides project ideas to build and grow your skills",
+  "main": "app.js",
+  "scripts": {
+    "frontend": "cd ../frontend/ && npm start",
+    "backend": "nodemon app.js",
+    "serve": "concurrently --kill-others-on-fail \"npm run frontend\" \"npm run backend\"",
+    "start": "node app.js"
+  },
+  "author": "Jacek, Lauren, Moody",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.9"
+  }
+}
