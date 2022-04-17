@@ -59,11 +59,13 @@ const SearchForm = ({setResultsDataHandler}) => {
 
     useEffect(() => {
 
+        const userSelect = {name: radioDifficulty};
+
         fetch("/api", {
             // set the method to post
             method: 'POST',
             // convert the payload object to json
-            body: JSON.stringify(radioDifficulty),
+            body: JSON.stringify(userSelect),
             // inform server that it is receiving json document
             headers: {"Content-Type": "application/json"}
         }).then(response => {
@@ -77,7 +79,7 @@ const SearchForm = ({setResultsDataHandler}) => {
         })
         .catch(error => {console.warn(error.message, "failed!")});
      
-    }, [radioDifficulty]);
+    }, [radioDifficulty, setResultsDataHandler]);
 
     return (
     <Fragment>
