@@ -4,6 +4,7 @@ import '../../sass/components/about.scss';
 function About() {
     return <Fragment>
         <div className='about'> 
+            <h2>About Us</h2>
             One difficulty in learning how to code is figuring out which project to build 
             to improve your skills. Most tutorials simply build a to-do app. Develapp takes 
             you beyond to-do list apps and helps you find projects you can build and be proud 
