@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
+    width: 100%;
 
     // styles for devices with a min-width of 600px
     @include breakpoint(37.5em) {
