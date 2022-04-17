@@ -4,7 +4,7 @@ import '../sass/components/footer.scss';
 function Footer() {
   return <Fragment>
             <footer className='footer'>
-                <p>footer content</p>
+                <p>Copyright &copy; Develapp 2022</p>
             </footer>
         </Fragment>
   
