@@ -36,20 +36,4 @@
             font-size: 5rem;
         }
     }
-
-    &__bg-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: .1;
-        overflow: hidden;
-        height: 100%;
-        width: 100%;
-    }
-
-    &__video {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
 }
