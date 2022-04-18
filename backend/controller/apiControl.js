@@ -30,9 +30,9 @@ const apiControl = (req, res) => {
                 if (err) return;
 
                 // set headers, status and send json data
-                res.setHeader("Content-Type", "application/json");
-                res.status(200);
-                res.send(result);
+                res.setHeader("Content-Type", "application/json")
+                .status(200)
+                .send(result);
         });
 }
 
